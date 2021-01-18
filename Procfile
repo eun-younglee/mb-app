@@ -1,1 +1,1 @@
-web: gunicorn mb_project.wsgi --log-file - p
+web: gunicorn mb_project.wsgi --log-file -
