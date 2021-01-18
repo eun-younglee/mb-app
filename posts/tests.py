@@ -16,7 +16,7 @@ class HomePageViewTest(TestCase):
     def setUp(self):
         Post.objects.create(text='another test')
 
-    def test_view_url_exists_at_proper_lcation(self):
+    def test_view_url_exists_at_proper_location(self):
         resp = self.client.get('/')
         self.assertEqual(resp.status_code, 200)
 
